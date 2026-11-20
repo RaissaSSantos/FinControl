@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- MENU LATERAL -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span>Financeiro</span>
+            </div>
+
+            <nav>
+                <a href="#dashboard" class="active">Dashboard</a>
+                <a href="#cadastro">Cadastrar movimentação</a>
+                <a href="#historico">Histórico</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>Controle Financeiro</p>
+                <span>Versão 1.0</span>
+            </div>
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="main-content">
+
+            <!-- CABEÇALHO -->
+            <header class="header">
+                <div>
+                    <h1>Controle Financeiro</h1>
+                    <p>Gerencie suas receitas e despesas.</p>
+                </div>
+            </header>
+
+            <!-- DASHBOARD -->
+            <section id="dashboard">
+
+                <div class="section-heading">
+                    <h2>Dashboard</h2>
+                    <p>Resumo da sua situação financeira</p>
+                </div>
+
+                <div class="cards">
+
+                    <div class="card balance">
+                        <span>Saldo atual</span>
+                        <h3>—</h3>
+                        <p>Saldo disponível</p>
+                    </div>
+
+                    <div class="card income">
+                        <span>Receitas</span>
+                        <h3>—</h3>
+                        <p>Total de entradas</p>
+                    </div>
+
+                    <div class="card expense">
+                        <span>Despesas</span>
+                        <h3>—</h3>
+                        <p>Total de saídas</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- CADASTRO -->
+            <section id="cadastro">
+
+                <div class="section-heading">
+                    <h2>Nova movimentação</h2>
+                    <p>Registre uma receita ou despesa.</p>
+                </div>
+
+                <div class="form-container">
+
+                    <form id="movimentacao">
+
+                        <div class="form-group">
+                            <label for="descricao">Descrição</label>
+                            <input
+                                type="text"
+                                id="descricao" maxlength="160"
+                                name="descricao"
+                                placeholder="Ex: Compra no mercado"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="valor">Valor (R$)</label>
+                                <input
+                                    type="number"
+                                    id="valor"
+                                    name="valor"
+                                    placeholder="0,00"
+                                    min="0.01" max="9999999999.99"
+                                    step="0.01"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tipo">Tipo</label>
+                                <select id="tipo" name="tipo" required>
+                                    <option value="">Selecione</option>
+                                    <option value="receita">Receita</option>
+                                    <option value="despesa">Despesa</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="categoria">Categoria</label>
+                            <select id="categoria" name="categoria" required>
+                                <option value="">Selecione uma categoria</option>
+                                <option value="alimentacao">Alimentação</option>
+                                <option value="transporte">Transporte</option>
+                                <option value="moradia">Moradia</option>
+                                <option value="lazer">Lazer</option>
+                                <option value="salario">Salário</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn-primary">
+                            Cadastrar movimentação
+                        </button>
+
+                        <p id="mensagem" role="status"></p>
+                    </form>
+
+                </div>
+
+            </section>
+
+            <!-- HISTÓRICO -->
+            <section id="historico">
+
+                <div class="section-heading">
+                    <h2>Histórico de movimentações</h2>
+                    <p>Consulte suas últimas movimentações.</p>
+                </div>
+
+                <div class="table-container">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Descrição</th>
+                                <th>Categoria</th>
+                                <th>Tipo</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+
+                        <tbody></tbody>
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- RODAPÉ -->
+            <footer>
+                <p>FinControl © 2026 - Sistema de Controle Financeiro</p>
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

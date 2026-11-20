@@ -1,0 +1,32 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Tipo {
+  receita
+  despesa
+}
+
+enum Categoria {
+  alimentacao
+  transporte
+  moradia
+  lazer
+  salario
+  outros
+}
+
+model Movimentacao {
+  id          Int       @id @default(autoincrement())
+  descricao   String    @db.VarChar(160)
+  valor       Decimal   @db.Decimal(12, 2)
+  tipo        Tipo
+  categoria   Categoria
+  criadoEm    DateTime  @default(now())
+  atualizadoEm DateTime @updatedAt
+}
