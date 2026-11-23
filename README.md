@@ -42,4 +42,16 @@ Tipos aceitos: receita e despesa. Categorias: alimentacao, transporte, moradia, 
 - public contém a interface do grupo e sua integração com a API.
 - tests contém os testes de validação. Execute com docker compose exec api npm test após iniciar a aplicação.
 
+~
+Equipe e Contribuições
+
+* Raissa: Testes do sistema, criação e organização do repositório no GitHub.
+* Kauan: Desenvolvimento do front-end e da interface do sistema.
+* Renan: Desenvolvimento do back-end e integração com o banco de dados.
+* Camily: Produção e edição do vídeo demonstrativo.
+* Victor: Elaboração da Prova de Conceito (PoC) e planejamento inicial do projeto.
+
+O projeto FinControl foi desenvolvido de forma colaborativa, com responsabilidades divididas entre os integrantes da equipe.
+
+
 
