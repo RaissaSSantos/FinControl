@@ -51,7 +51,7 @@ Tipos aceitos: receita e despesa. Categorias: alimentacao, transporte, moradia, 
 * Camily: Produção e edição do vídeo demonstrativo.
 * Victor: Elaboração da Prova de Conceito (PoC) e planejamento inicial do projeto.
 
-O projeto FinControl foi desenvolvido de forma colaborativa, com responsabilidades divididas entre os integrantes da equipe.
+O projeto FinControl foi desenvolvido de forma colaborativa, com responsabilidades divididas entre os integrantes da equipe. 
 
 
 
