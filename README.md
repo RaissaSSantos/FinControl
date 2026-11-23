@@ -53,5 +53,7 @@ Tipos aceitos: receita e despesa. Categorias: alimentacao, transporte, moradia, 
 
 O projeto FinControl foi desenvolvido de forma colaborativa, com responsabilidades divididas entre os integrantes da equipe. 
 
+## Vídeo Demonstrativo
 
+Assista à demonstração do funcionamento do FinControl: https://youtu.be/naSG2e87bag?is=DqsLKRN-7Ur4dkxd
 
