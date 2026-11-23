@@ -43,7 +43,7 @@ Tipos aceitos: receita e despesa. Categorias: alimentacao, transporte, moradia, 
 - tests contém os testes de validação. Execute com docker compose exec api npm test após iniciar a aplicação.
 
 ~
-Equipe e Contribuições
+## Equipe e Contribuições
 
 * Raissa: Testes do sistema, criação e organização do repositório no GitHub.
 * Kauan: Desenvolvimento do front-end e da interface do sistema.
